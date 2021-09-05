@@ -1,6 +1,13 @@
-# Web_Mining_Lab :heavy_check_mark:
-Repository to store assignments done for Web Mining Course(CSE3024)
-## Lab1
+# Web_Mining_Lab 
+Repository to store assignments done for Web Mining Course(CSE3024) 
+- - - -
+Global Depedencies  
+__Required for Every Lab__
+- bs4(Beautiful)   
+  ``` pip install bs4 ```  
+  ``` python3 -m pip install bs4```  
+- - - -
+## Lab1 ✔️
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
 [Implementation](/lab1.py)
 ## Lab2 :heavy_check_mark:
@@ -32,6 +39,13 @@ px-0”
   
 [Implementation](/lab3.py)  
 ## Lab4 ✅
+- - - -
+Dependency  
+__Required for lab4 Only__  
+-tabulate  
+ ``` pip install tabulate```  
+ ``` python3 -m pip install tabulate```
+- - - - 
 Implement a Baic webcrawler to crawl [VIT Website](https://vit.ac.in)  
 Implement URL Frontier and perform BFS  
 Implement URL filter to fiter out files like(images,doc,pdf)  
