@@ -3,17 +3,19 @@ import re
 import requests
 from bs4 import BeautifulSoup as bs
 
+
 # A recursive Function to List all the children in a Document, given an max depth for better control.
 # Optionally variable spacing can be given.
-def recursiveDOMList(tag,max_depth,spacing=0):
-    if max_depth>0:
-        if spacing==0:
+def recursiveDOMList(tag, max_depth, spacing=0):
+    if max_depth > 0:
+        if spacing == 0:
             print("┌", tag.name)
         else:
-            print("│    "*spacing+"├──",tag.name)
+            print("│    " * spacing + "├──", tag.name)
         for i in tag.findChildren(recursive=False):
-            recursiveDOMList(i,max_depth-1,spacing+1)
+            recursiveDOMList(i, max_depth - 1, spacing + 1)
     return
+
 
 # Task 1
 # url = "https://www.vit.ac.in"
@@ -57,7 +59,7 @@ def recursiveDOMList(tag,max_depth,spacing=0):
 
 ## Task 3
 url = "https://sermitsiaq.ag/english"
-resp = requests.get(url, headers={"User-Agent":"Mozilla/5.0"})
+resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
 soup = bs(resp.text, "html.parser")
 # Task 3(a)
 # for i in soup.find_all(class_="menu"):
@@ -85,18 +87,22 @@ soup = bs(resp.text, "html.parser")
 url = "https://www.batimes.com.ar"
 resp = requests.get(url, verify=False)
 soup = bs(resp.text, "html.parser")
+
+
 # Task 4(a)
 # for i in soup.find_all(class_="nav-item text-uppercase px-0"):
 #     print(i)
 
 # Task4(b)
-# def hasMK(tag):
-#     text_content=str(tag.find(text=True,recursive=False))
-#     if "Matías Kulfas" in text_content:
-#         return True
-#     return False
-# for i in soup.find_all(hasMK):
-#     print(i)
+def hasMK(tag):
+    text_content = str(tag.find(text=True, recursive=False))
+    if "Matías Lammens" in text_content:
+        return True
+    return False
+
+
+for i in soup.find_all(hasMK):
+    print(i)
 
 # Task4(c)
 # for i in soup.find_all("img",attrs={"src":True,"alt":True}):
@@ -106,5 +112,4 @@ soup = bs(resp.text, "html.parser")
 #     print("Image Description: ",i["alt"])
 
 # Task4(d)
-recursiveDOMList(soup.html,6)
-
+# recursiveDOMList(soup.html,6)
