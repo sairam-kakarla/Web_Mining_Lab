@@ -1,14 +1,14 @@
-# Web_Mining_Lab
+# Web_Mining_Lab :heavy_check_mark:
 Repository to store assignments done for Web Mining Course(CSE3024)
 ## Lab1
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
 [Implementation](/lab1.py)
-## Lab2
+## Lab2 :heavy_check_mark:
 - Explore [VIT Chennai Website](https://chennai.vit.ac.in/), display the list of faulty and their corresponding title.
 - Explore [GRT Jewel](https://www.grtjewels.com/), display ornament information, classified according thier category.
 
 [Implementation](/lab2.py)  
-## Lab3
+## Lab3 :heavy_check_mark:
 1. Explore [VIT Website](https://www.vit.ac.in)
    1. Print Title
    1. Print all anchor tags with class "nav-link"
@@ -30,9 +30,17 @@ px-0”
    1. List DOM hierarchy of the page.  
   
   
-[Implementation](/lab3.py)
-  
-   
+[Implementation](/lab3.py)  
+## Lab4 ✅
+Implement a Baic webcrawler to crawl [VIT Website](https://vit.ac.in)  
+Implement URL Frontier and perform BFS  
+Implement URL filter to fiter out files like(images,doc,pdf)  
+[Implementation](/lab4.py)
+
+## Lab5 ✅
+Implement algorithm to create inverse document posting list to index the documents.  
+Part of Search Engine Construction.  
+[Implementation](/lab5.py)
 
    
 
