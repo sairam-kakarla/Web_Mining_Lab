@@ -4,7 +4,6 @@ import time
 import re
 from tabulate import tabulate
 import warnings
-
 ###################################################
 # Additional modules and libs needed
 # 1 tabulate (for printing table can be replace with simple prints statements as well).

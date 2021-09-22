@@ -3,6 +3,8 @@
 # RpostingList Structure
 # [[docid1,index1,index2,...],[docid2,index1,index2,...],...]
 
+# Removes the punctuation in the document
+# and returns list of space seperated tokens
 def parseAndRemovePunctuation(doc):
     parsed_doc = doc.split()
     i = 0
@@ -45,7 +47,7 @@ def displayIndexer(indexer):
     for i in indexer.keys():
         print("[%s %d] -> ["%(i,indexer[i][0]),end="")
         for j in indexer[i][1:]:
-            print("DOCID [%d]"%(j[0]),end="->[")
+            print("DOCID[%d]"%(j[0]),end="->[")
             for k in j[1]:
                 print("%d"%(k),end="->")
             print("-1]",end=",")
