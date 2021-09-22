@@ -52,6 +52,7 @@ def displayIndexer(indexer):
                 print("%d"%(k),end="->")
             print("-1]",end=",")
         print("]")
+
 doc1 = "I did enact Julius Caesar I was killed i' the Capitol; Brutus killed me."
 doc2 = "So let it be with Caesar. The noble Brutus hath told you Caesar was ambitious"
 parsedDoc1 = parseAndRemovePunctuation(doc1)
