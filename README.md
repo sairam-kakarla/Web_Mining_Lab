@@ -1,11 +1,15 @@
 # Web_Mining_Lab 
 Repository to store assignments done for Web Mining Course(CSE3024) 
 - - - -
-Global Depedencies  
-__Required for Every Lab__
+__Libraries Required__
 - bs4(Beautiful)   
   ``` pip install bs4 ```  
+  or  
   ``` python3 -m pip install bs4```  
+- tabulate  
+ ``` pip install tabulate```  
+ or  
+ ``` python3 -m pip install tabulate```
 - - - -
 ## Lab1 ✔️
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
@@ -38,14 +42,8 @@ px-0”
   
   
 [Implementation](/lab3.py)  
-## Lab4 ✅
-- - - -
-Dependency  
-__Required for lab4 Only__  
--tabulate  
- ``` pip install tabulate```  
- ``` python3 -m pip install tabulate```
-- - - - 
+
+## Lab4 ✔️
 Implement a Baic webcrawler to crawl [VIT Website](https://vit.ac.in)  
 Implement URL Frontier and perform BFS  
 Implement URL filter to fiter out files like(images,doc,pdf)  
@@ -55,6 +53,12 @@ Implement URL filter to fiter out files like(images,doc,pdf)
 Implement algorithm to create inverse document posting list to index the documents.  
 Part of Search Engine Construction.  
 [Implementation](/lab5.py)
+
+## Lab6 ✅
+Implement HITS Algorithm for hud and authority ranking, developed by Jon Kleinberg.
+Given a adjacency matrix,number of iterations geneate the authority score and hub score for each node.
+There could be self looks and multiple links among the same nodes(like weighted).  
+[Implementation](/lab6.py)
 
    
 
