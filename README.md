@@ -1,4 +1,4 @@
-# Web_Mining_Lab 
+# Web Mining Lab 
 Repository to store assignments done for Web Mining Course(CSE3024) 
 - - - -
 __Libraries Required__
@@ -56,9 +56,16 @@ Part of Search Engine Construction.
 
 ## Lab6 ✅
 Implement HITS Algorithm for hud and authority ranking, developed by Jon Kleinberg.
-Given a adjacency matrix,number of iterations geneate the authority score and hub score for each node.
-There could be self looks and multiple links among the same nodes(like weighted).  
-[Implementation](/lab6.py)
+Given an adjacency matrix,number of iterations generate the authority score and hub score for each node.
+There could be self loops and multiple links among the same pair of nodes(like weighted).  
+[Implementation](/lab6.py)  
+[References](https://en.wikipedia.org/wiki/HITS_algorithm#Algorithm)
 
+## Lab7
+Implmented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
+generated the outlink Vector, pagerank Vector for each node.
+There could be self loops and multiple links among the same pair of nodes.
+[Implementation](/lab7.py)  
+[References](https://en.wikipedia.org/wiki/PageRank#Damping_factor)
    
 
