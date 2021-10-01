@@ -64,7 +64,7 @@ There could be self loops and multiple links among the same pair of nodes(like w
 ## Lab7 ✅
 Implmented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
 generated the outlink Vector, pagerank Vector for each node.
-There could be self loops and multiple links among the same pair of nodes.
+There could be self loops and multiple links among the same pair of nodes.  
 [Implementation](/lab7.py)  
 [References](https://en.wikipedia.org/wiki/PageRank#Damping_factor)
    
