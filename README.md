@@ -14,12 +14,12 @@ __Libraries Required__
 ## Lab1 ✔️
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
 [Implementation](/lab1.py)
-## Lab2 :heavy_check_mark:
+## Lab2 ✔️
 - Explore [VIT Chennai Website](https://chennai.vit.ac.in/), display the list of faulty and their corresponding title.
 - Explore [GRT Jewel](https://www.grtjewels.com/), display ornament information, classified according thier category.
 
 [Implementation](/lab2.py)  
-## Lab3 :heavy_check_mark:
+## Lab3 ✔️
 1. Explore [VIT Website](https://www.vit.ac.in)
    1. Print Title
    1. Print all anchor tags with class "nav-link"
@@ -43,7 +43,7 @@ px-0”
   
 [Implementation](/lab3.py)  
 
-## Lab4 ✔️
+## Lab4 ✔
 Implement a Baic webcrawler to crawl [VIT Website](https://vit.ac.in)  
 Implement URL Frontier and perform BFS  
 Implement URL filter to fiter out files like(images,doc,pdf)  
@@ -61,7 +61,7 @@ There could be self loops and multiple links among the same pair of nodes(like w
 [Implementation](/lab6.py)  
 [References](https://en.wikipedia.org/wiki/HITS_algorithm#Algorithm)
 
-## Lab7
+## Lab7 ✅
 Implmented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
 generated the outlink Vector, pagerank Vector for each node.
 There could be self loops and multiple links among the same pair of nodes.
