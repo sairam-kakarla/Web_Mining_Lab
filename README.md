@@ -55,14 +55,14 @@ Part of Search Engine Construction.
 [Implementation](/lab5.py)
 
 ## Lab6 ✅
-Implement HITS Algorithm for hud and authority ranking, developed by Jon Kleinberg.
+Implemented HITS Algorithm for hud and authority ranking, developed by Jon Kleinberg.
 Given an adjacency matrix,number of iterations generate the authority score and hub score for each node.
 There could be self loops and multiple links among the same pair of nodes(like weighted).  
 [Implementation](/lab6.py)  
 [References](https://en.wikipedia.org/wiki/HITS_algorithm#Algorithm)
 
 ## Lab7 ✅
-Implmented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
+Implemented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
 generated the outlink Vector, pagerank Vector for each node.
 There could be self loops and multiple links among the same pair of nodes.  
 [Implementation](/lab7.py)  
