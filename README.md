@@ -44,9 +44,9 @@ px-0”
 [Implementation](/lab3.py)  
 
 ## Lab4 ✔
-Implement a Baic webcrawler to crawl [VIT Website](https://vit.ac.in)  
+Implement a Basic webcrawler to crawl [VIT Website](https://vit.ac.in)  
 Implement URL Frontier and perform BFS  
-Implement URL filter to fiter out files like(images,doc,pdf)  
+Implement URL filters to filter out files like(images,doc,pdf)  
 [Implementation](/lab4.py)
 
 ## Lab5 ✅
