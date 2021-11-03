@@ -67,5 +67,9 @@ generated the outlink Vector, pagerank Vector for each node.
 There could be self loops and multiple links among the same pair of nodes.  
 [Implementation](/lab7.py)  
 [References](https://en.wikipedia.org/wiki/PageRank#Damping_factor)
-   
+
+## Lab8
+Implement the K Means Clustering Algorithm to find document similarities.
+Represent Documents in vector form using the frequency of content words.
+[Implementation](/lab8.py)
 
