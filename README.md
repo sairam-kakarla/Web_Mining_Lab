@@ -10,6 +10,8 @@ __Libraries Required__
  ``` pip install tabulate```  
  or  
  ``` python3 -m pip install tabulate```
+- numpy  
+  ```pip install numpy```
 - - - -
 ## Lab1 ✔️
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
