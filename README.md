@@ -13,15 +13,15 @@ __Libraries Required__
 - numpy  
   ```pip install numpy```
 - - - -
-## Lab1 ✔️
+## Lab1 
 Explore Basics of request module, understand HTTP and HTTPS Request and Response Objects.  
 [Implementation](/lab1.py)
-## Lab2 ✔️
+## Lab2 
 - Explore [VIT Chennai Website](https://chennai.vit.ac.in/), display the list of faulty and their corresponding title.
 - Explore [GRT Jewel](https://www.grtjewels.com/), display ornament information, classified according thier category.
 
 [Implementation](/lab2.py)  
-## Lab3 ✔️
+## Lab3 
 1. Explore [VIT Website](https://www.vit.ac.in)
    1. Print Title
    1. Print all anchor tags with class "nav-link"
@@ -45,25 +45,25 @@ px-0”
   
 [Implementation](/lab3.py)  
 
-## Lab4 ✔
+## Lab4 
 Implement a Basic webcrawler to crawl [VIT Website](https://vit.ac.in)  
 Implement URL Frontier and perform BFS  
 Implement URL filters to filter out files like(images,doc,pdf)  
 [Implementation](/lab4.py)
 
-## Lab5 ✅
+## Lab5 
 Implement algorithm to create inverse document posting list to index the documents.  
 Part of Search Engine Construction.  
 [Implementation](/lab5.py)
 
-## Lab6 ✅
+## Lab6 
 Implemented HITS Algorithm for hud and authority ranking, developed by Jon Kleinberg.
 Given an adjacency matrix,number of iterations generate the authority score and hub score for each node.
 There could be self loops and multiple links among the same pair of nodes(like weighted).  
 [Implementation](/lab6.py)  
 [References](https://en.wikipedia.org/wiki/HITS_algorithm#Algorithm)
 
-## Lab7 ✅
+## Lab7 
 Implemented the Page Rank algorithm. Given an adjacency matrix, number of iterations, damping factor
 generated the outlink Vector, pagerank Vector for each node.
 There could be self loops and multiple links among the same pair of nodes.  
@@ -75,3 +75,6 @@ Implement the K Means Clustering Algorithm to find document similarities.
 Represent Documents in vector form using the frequency of content words.
 [Implementation](/lab8.py)
 
+## Lab9
+Implemented Naive Bayes Test Classification to classify articles based on titles.  
+[Implementation](/lab9.py)
