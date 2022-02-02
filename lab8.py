@@ -36,7 +36,7 @@ def KMeans(docs_vector,k_no,num_iter):
             elif len(temp_clusters[k])==1:
                 temp_centroid.append(docs_vector[temp_clusters[k][0]].tolist())
         centroid=np.asarray(temp_centroid,float)
-    print(tabulate.tabulate([[str(i+1),centroid[i]] for i in range(len(centroid))],headers=["Cluster","Centroid"],tablefmt="fancy_grid"))
+    print(tabulate.tabulate([[str(i+1),centroid[i].tolist()] for i in range(len(centroid))],headers=["Cluster","Centroid"],tablefmt="fancy_grid"))
     print(tabulate.tabulate([["DOC-"+str(i+1),str(classfication[i]+1)] for i in classfication.keys()],headers=["DOC","Cluster"],tablefmt="fancy_grid"))
 
 
@@ -64,7 +64,7 @@ def getDocVectorRep(datasetM:list,content_wordsM:list)->numpy.matrix:
         doc_vector=[0]*len(content_wordsM)
         for j in range(len(content_wordsM)):
             if content_wordsM[j] in i:
-                doc_vector[j]+=1
+                doc_vector[j]+=i.count(content_wordsM[j])
         vector_rep.append(doc_vector)
     return np.array(vector_rep)
 
@@ -86,10 +86,6 @@ if __name__=="__main__":
                 distanceMatrix[i][j]=np.round(np.sqrt(np.sum((doc_vector_rep[i]-doc_vector_rep[j])**2)),4)
     print("Inital Distance Matrix")
     print(tabulate.tabulate([["DOC-"+str(k+1),*i] for k,i in enumerate(distanceMatrix)],headers=[" ",*["DOC-"+str(i+1) for i in range(len(datasetM))]],tablefmt="fancy_grid"))
-    print("NUMBER OF CLUSTER 2")
-    KMeans(doc_vector_rep, 2, 100)
-    print("NUMBER OF CLUSTER 3")
-    KMeans(doc_vector_rep, 3, 100)
-    print("NUMBER OF CLUSTER 4")
-    KMeans(doc_vector_rep, 4, 100)
+    print("NUMBER OF CLUSTER 5")
+    KMeans(doc_vector_rep, 7, 25)
 
